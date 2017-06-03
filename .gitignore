@@ -16,3 +16,4 @@
 /data/*
 !/data/FrontPage.txt
 !/data/manual.txt
+vendor/*/

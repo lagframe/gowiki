@@ -1,0 +1,12 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "/JLv8yvDvW2JUWOmWIgs0fb6GOw=",
+			"path": "github.com/lagframe/justFiles",
+			"revision": ""
+		}
+	],
+	"rootPath": "github.com/lagframe/gowiki"
+}
