@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"errors"
 	"html/template"
 	"io/ioutil"
@@ -112,6 +113,7 @@ func makeHandler(fn func (http.ResponseWriter, *http.Request, string)) http.Hand
 }
 
 func main() {
+	fmt.Println("PORT: "+os.Getenv("PORT"));
 	fileSystem := justFiles.JustFilesFilesystem{http.Dir("resources/")}
  	http.Handle("/resources/", http.StripPrefix("/resources/", http.FileServer(fileSystem)))
 
@@ -119,5 +121,5 @@ func main() {
 	http.HandleFunc("/view/", makeHandler(viewHandler))
 	http.HandleFunc("/edit/", makeHandler(editHandler))
 	http.HandleFunc("/save/", makeHandler(saveHandler))
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
