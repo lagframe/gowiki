@@ -1,0 +1,1 @@
+To create a new page, just open /view/PAGENAME. To link between pages, use [[PAGENAME]] (brackets with pagename inside).
