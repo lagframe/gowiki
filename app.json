@@ -1,0 +1,6 @@
+{
+  "name": "Go Webserver / Wiki Sample",
+  "description": "Go Webserver / Wiki based on the golang.org tutorial (https://golang.org/doc/articles/wiki/)",
+  "repository": "https://github.com/lagframe/gowiki",
+  "keywords": ["go", "wiki", "webserver"]
+}
